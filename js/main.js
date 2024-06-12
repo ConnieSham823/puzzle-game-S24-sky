@@ -3,8 +3,8 @@ console.log("Javascript is connected");
 // variables
 const theButtons = document.querySelectorAll("#buttonHolder img");
 const puzzleBoard = document.querySelector(".puzzle-board");
-const puzzlePieces = document.querySelectorAll(".puzzlePieces img");
-const dropZone = document.querySelectorAll(".drop-zone");
+const puzzlePieces = document.querySelectorAll(".puzzle-pieces img");
+const dropZones = document.querySelectorAll(".drop-zone");
 let draggedPiece;
 
 
@@ -43,6 +43,6 @@ theButtons.forEach(button => button.addEventListener("click", changeBGImage));
 
 puzzlePieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
 
-dropZone.forEach(zone => zone.addEventListener("dragover",handleOver));
+dropZones.forEach(zone => zone.addEventListener("dragover",handleOver));
 
-dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
+dropZones.forEach(zone => zone.addEventListener("drop", handleDrop));
